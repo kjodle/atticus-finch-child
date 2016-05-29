@@ -1,6 +1,6 @@
 /*
  Theme Name:   Atticus Finch Child
- Theme URI:    http://example.com/atticus-finch-child/
+ Theme URI:    https://github.com/kjodle/atticus-finch-child
  Description:  Atticus Finch Child Theme
  Author:       Kenneth John Odle
  Author URI:   http://techblog.kjodle.net
@@ -9,4 +9,54 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  atticus-finch-child
+*/
+
+/*
+   This child theme stylesheet already has many theme elements included. All you
+   need to do is to uncomment those items you need to change. Feel free to
+   delete anything you are not using.
+*/
+
+
+
+
+/*
+   Google Webfonts
+   If you want to add a webfont, simply use the '@import' as in the example below:
+*/
+
+/*
+   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,500italic,700,700italic);
+*/
+
+
+
+
+/* Site title and site description */
+/*
+#site-title {
+	font-family: ;
+}
+#site-desc {
+	font-family: ;
+}
+#site-title h1,
+#site-title h2, {
+	color: ;
+}
+#site-title a {
+	color: '
+}
+*/
+
+
+
+
+/* Post titles */
+/*
+.post-title {
+	font-size: 24px;
+	font-family: "", serif;
+	margin: 0;
+}
 */
