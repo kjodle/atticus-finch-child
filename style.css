@@ -1,14 +1,16 @@
 /*
- Theme Name:   Atticus Finch Child
- Theme URI:    https://github.com/kjodle/atticus-finch-child
- Description:  Atticus Finch Child Theme
- Author:       Kenneth John Odle
- Author URI:   http://techblog.kjodle.net
- Template:     atticus-finch
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Text Domain:  atticus-finch-child
+Theme Name: Atticus Finch Child
+Theme URI: http://wiki.kjodle.net/Category:Atticus_Finch_Theme
+Template: atticus-finch
+Author: kjodle
+Author URI: http://techblog.kjodle.net/
+Description: Use this Atticus Finch child theme to easily configure your own version of this theme. 
+Version: 1.1
+Updated: 2017-05-27 15:45:54
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  atticus-finch-child
+
 */
 
 /*
@@ -58,5 +60,17 @@
 	font-size: 24px;
 	font-family: "", serif;
 	margin: 0;
+}
+*/
+
+/* Headers */
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
 }
 */

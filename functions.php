@@ -1,13 +1,14 @@
 <?php
+// Exit if accessed directly
+if ( !defined( 'ABSPATH' ) ) exit;
 
-// Atticus Finch Child Theme
+/* Do NOT remove the below function or you child theme will not load properly */
 
-function child_theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', '', '1.0' );
-	wp_enqueue_style( 'parent-style-mobile', get_template_directory_uri() . '/styles/mobile.css', 'atticus-finch-style', '1.0', 'screen and (max-width: '. get_theme_mod( 'atticus_finch_mobile_breakpoint' ) . 'px)' );
-    wp_enqueue_style( 'parent-style-print', get_template_directory_uri() . '/styles/print.css', '', '1.0', 'print' );
-    wp_enqueue_style( 'parent-style-menus', get_template_directory_uri() . '/styles/menus.css', '', '1.0', 'screen' );
+if ( !function_exists( 'af_childtheme_parent_css' ) ):
+    function af_childtheme_parent_css() {
+        wp_enqueue_style( 'af_childtheme_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array(  ) );
+    }
+endif;
+add_action( 'wp_enqueue_scripts', 'af_childtheme_parent_css', 10 );
 
-}
- add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
-
+/* Add your child theme's functions below */
