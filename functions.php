@@ -40,7 +40,7 @@ add_action( 'wp_enqueue_scripts', 'atticus_finch_enqueue_styles' );
 /* Add HTML or scripts to the <head> element by uncommenting the function below */
 /*
 function atticus_finch_header() { ?>
-		This is in the head.
+		Add your code here.
 <?php }
 add_action ('wp_head','atticus_finch_header');
 */
@@ -49,7 +49,7 @@ add_action ('wp_head','atticus_finch_header');
 /* Add HTML or scripts just before the </body> tag by uncommenting the function below */
 /*
 function atticus_finch_footer() { ?>
-		This is just before the </body> tag.
+		Add your code here.
 <?php }
 add_action ('wp_footer','atticus_finch_footer');
 */
