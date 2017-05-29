@@ -3,6 +3,7 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 
 
+
 /* Add a Google Webfont by uncommenting the following functions and changing the 'family' attribute below. */
 /*
 function af_childtheme_add_google_fonts() {
@@ -10,6 +11,8 @@ function af_childtheme_add_google_fonts() {
 	}
 add_action( 'wp_enqueue_scripts', 'af_childtheme_add_google_fonts' );
 */
+
+
 
 /* Let's load our child theme. */
 function atticus_finch_enqueue_styles() {
@@ -31,5 +34,25 @@ function atticus_finch_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'atticus_finch_enqueue_styles' );
+
+
+
+/* Add HTML or scripts to the <head> element by uncommenting the function below */
+/*
+function atticus_finch_header() { ?>
+		This is in the head.
+<?php }
+add_action ('wp_head','atticus_finch_header');
+*/
+
+
+/* Add HTML or scripts just before the </body> tag by uncommenting the function below */
+/*
+function atticus_finch_footer() { ?>
+		This is just before the </body> tag.
+<?php }
+add_action ('wp_footer','atticus_finch_footer');
+*/
+
 
 /* Add your child theme's functions below */
