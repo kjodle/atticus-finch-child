@@ -1,1 +1,20 @@
 /* Use this stylesheet to override menu styles in Atticus Finch or to create new ones. */
+
+/* To change the font used in the Top Menu, adjust the following elements */
+
+#aboveheadermenu {
+	font-family: ;
+}
+
+/* To change the font used in the Main Menu, adjust the following elements */
+
+#belowheadermenu {
+	font-family: ;
+}
+
+/* To change the font used in the Footer Menu, adjust the following elements */
+
+#footermenu {
+	font-family: ;
+}
+
