@@ -21,16 +21,16 @@ function atticus_finch_enqueue_styles() {
 	wp_enqueue_style( 'atticus-finch-style', get_template_directory_uri() . '/style.css' );
 	
 	/* Now we will load the child theme's style sheet: */
-	wp_enqueue_style( 'atticus-finch-child-style', get_stylesheet_directory_uri() . '/style.css', 'atticus-finch-style', wp_get_theme() -> get( 'Version' ) );
+	wp_enqueue_style( 'atticus-finch-child-style', get_stylesheet_directory_uri() . '/style.css', array( 'atticus-finch-style' ), wp_get_theme() -> get( 'Version' ) );
 
 	/* If you need to make changes to the child theme's mobile styles, uncomment the following line and edit the child theme's '/styles/mobile.css' file. */
-//	wp_enqueue_style( 'atticus-finch-child-mobile-style', get_stylesheet_directory_uri() . '/styles/mobile.css', 'atticus-finch-mobile', wp_get_theme() -> get( 'Version' ), 'screen and (max-width: '. get_theme_mod( 'atticus_finch_mobile_breakpoint' ) . 'px)' );
+//	wp_enqueue_style( 'atticus-finch-child-mobile-style', get_stylesheet_directory_uri() . '/styles/mobile.css', array( 'atticus-finch-mobile' ), wp_get_theme() -> get( 'Version' ), 'screen and (max-width: '. get_theme_mod( 'atticus_finch_mobile_breakpoint' ) . 'px)' );
 
 	/* If you need to make changes to the child theme's menu styles, uncomment the following line and edit the child theme's '/styles/menu.css' file. */
-//	wp_enqueue_style( 'atticus-finch-child-menu-style', get_stylesheet_directory_uri() . '/styles/menus.css', 'atticus-finch-mobile', wp_get_theme() -> get( 'Version' ) );
+//	wp_enqueue_style( 'atticus-finch-child-menu-style', get_stylesheet_directory_uri() . '/styles/menus.css', array( 'atticus-finch-mobile' ), wp_get_theme() -> get( 'Version' ) );
 
 	/* If you need to make changes to the child theme's print styles, uncomment the following line and edit the child theme's '/styles/print.css' file. */
-//	wp_enqueue_style( 'atticus-finch-child-print-style', get_stylesheet_directory_uri() . '/styles/print.css', 'atticus-finch-mobile', wp_get_theme() -> get( 'Version' ), 'print' );
+//	wp_enqueue_style( 'atticus-finch-child-print-style', get_stylesheet_directory_uri() . '/styles/print.css', array( 'atticus-finch-mobile' ), wp_get_theme() -> get( 'Version' ), 'print' );
 }
 
 add_action( 'wp_enqueue_scripts', 'atticus_finch_enqueue_styles' );
